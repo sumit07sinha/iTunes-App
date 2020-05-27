@@ -18,67 +18,18 @@ body, .app {
 }
 
 /* Createartist */
-
-.close-create-artist {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30px;
-  font-size: 0;
+.app-header{
+margin: 5px;
+text-align: center;
 }
 
-.create-artist-form {
-  padding: 20px;
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-}
-
-.create-artist-details {
-  margin-left: 20px;
-}
-
-.create-artist-avatar-input {
-  min-width: 60px;
-  height: 60px;
-  background-color: white;
-  background-size: 32px 32px;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-}
-
-.create-artist-details input {
-  width: 100%;
-  padding: 5px 10px;
-  margin-bottom: 10px;
-  font-size: inherit;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  outline: 0;
-}
-
-
-.create-artist-details button {
-  margin-top: 20px;
-  background: #ccc;
-  padding: 10px;
-  text-transform: uppercase;
-  font-size: inherit;
-  border: none;
-  outline: 0;
-}
 
 /* Listartists */
 
 .list-artists {
-  padding-top: 60px;
+  padding-top: 10px;
 }
 .list-artists-top {
-  position: fixed;
   width: 100%;
   top: 0;
   border-bottom: 1px solid #d5d8df;
@@ -105,17 +56,6 @@ body, .app {
   font-size: 26px;
 }
 
-.showing-artists {
-  text-align: center;
-  margin: 20px 0;
-}
-.showing-artists button {
-  color: blue;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: inherit;
-}
 
 .artist-list {
   width: 100%;

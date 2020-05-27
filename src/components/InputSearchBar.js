@@ -12,6 +12,7 @@ class InputSearchBar extends Component {
     }
     getArtistDetails = () => {
         const url = `https://itunes.apple.com/search?term=${this.state.query.replace(" ", "+")}`;
+        this.setState({ artistDetails: "" })
         fetch(url)
             .then(res => res.blob())
             .then(blob => {
@@ -24,7 +25,7 @@ class InputSearchBar extends Component {
     render() {
         const artistComponentsArray = [];
         this.state.artistDetails && this.state.artistDetails.results && this.state.artistDetails.results.map(artistData => {
-            artistComponentsArray.push(<Artist artistData={artistData} key={artistData.artistId} />)
+            artistComponentsArray.push(<Artist artistData={artistData} key={artistData.previewUrl} />)
         })
         return (
             <div className='list-artists'>
