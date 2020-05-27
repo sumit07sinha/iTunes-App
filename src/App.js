@@ -6,7 +6,7 @@ import InputSearchBar from './components/InputSearchBar'
 function App() {
   return (
     <BrowserRouter>
-      <Route path="/" render={() => (<InputSearchBar />)} />
+      <Route exact path="/" render={() => (<InputSearchBar />)} />
 
     </BrowserRouter>
   );

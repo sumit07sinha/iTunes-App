@@ -17,7 +17,7 @@ const artist = (props) => {
         </div>
         <div className='artist-play-button'>
 
-          <a href={`${previewUrl}`}>
+          <a target="blank" href={`${previewUrl}`}>
             <div className="play-artist"></div>
           </a>
         </div>
